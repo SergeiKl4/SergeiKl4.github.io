@@ -1,0 +1,541 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+
+/* font-family: "BebasRegular"; */
+@font-face {
+    font-family: "Bebas";
+    src: url("../fonts/bebas/bebas.ttf");
+    src: url("../fonts/bebas/bebas.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	background-color: #f4f4f4;
+}
+
+body {
+	
+}
+.clear {
+	clear: both;
+}
+
+#wrapper {
+
+}
+
+#header {
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.primary_menu {
+	width: 919px;
+	height: 80px;
+	line-height: 80px;
+	margin: 0 auto;
+	padding: 0;
+	background: #f4f4f4;
+}
+
+.logo {
+	float: left;
+	margin-left: 5px;
+
+}
+.logo span a {
+	font-family: "Bree Serif" , serif;
+	font-size: 20px;
+	color: #606060;
+}
+
+.logo > a > img {
+	margin-right: 7px;
+	position: relative;
+	top: 3px;
+}
+
+.navigation {
+	float: right;
+}
+
+.navigation {
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+
+}
+
+.navigation li {
+	display: inline-block;
+	font-size: 14px;
+	list-style: none;
+	
+}
+
+.navigation li a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color: #515862;
+			transition: all.6s ease;
+	   -moz-transition: all.6s ease;
+		 -o-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+		-ms-transition: all.6s ease;
+}
+
+.navigation li a.nav {
+	line-height: 80px;
+	display: inline-block;
+	padding: 0 17px;
+	margin: 0 8px;
+	position: relative;
+	 
+}
+ /* ховер нижняя полоска */
+.navigation > li > a.nav:hover::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 12px;
+	background-color: #0080b7;
+}
+/* квадрат на нижней полоске ховера */
+.navigation > li > a.nav:hover::after {
+	content: "";
+	position: absolute;
+	left: calc((100% - 10px)/2);
+	bottom: 7px;
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+	background-color: #0080b7;
+}
+
+/* меню при наведении */
+.navigation > li > a.nav:hover {
+	background-color: #12A3D6;
+	font-family: 'Ubuntu', sans-serif;
+	/*font-weight: bold;
+	font-size: 15px;*/
+	color: #C5F4FF;
+	
+}
+
+a.nav {
+	
+}
+	
+#last {
+	margin-left: 0px;
+}
+
+#blog {
+	background-color: #f98561;
+	color: #fff;
+	padding: 5px 19px;
+	border-radius: 3px;
+	transition: background-color .6s  ease;
+	-moz-transition: background-color .6s ease;
+	-o-transition: background-color .6s ease;
+	-webkit-transition: background-color .6s ease;
+	-ms-transition: background-color .6s ease;
+}
+
+a#blog:hover {
+	background-color: #e46d48;
+}
+
+ 		/*search*/
+#search span {
+	margin-right: 7px;
+	padding-top: 10px; 
+	margin-left: 92px;
+	font-size: 12px;
+}
+
+#search img {
+	margin-right: -16px;
+	position: relative;
+	top: 13px;
+	
+}
+
+.big_slide {
+	
+}	
+	/* big side */
+#main {
+	height: 295px;
+	width: 1280px;
+	position: relative;
+	margin: 0 auto;
+
+	/*background: #3D4750 url(../photo/main.jpg) no-repeat center bottom;*/
+	-webkit-background-size: cover;
+		 -o-background-size: cover;
+	   -moz-background-size: cover;
+		-ms-background-size: cover;
+			background-size: cover;
+}
+
+.big_slide img {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+
+.big_slide {
+
+}
+
+	/* надпись portfolio */
+.big_slide span {
+	font-family: "Bebas";
+	font-size: 80px;
+	color: #cccece;
+	position: relative;
+	height: 295px;
+	line-height: 295px;
+	left: 36.62%;
+	top: -10px;
+}
+
+
+
+/* content */
+#content-wrapper {
+	background-color: #f4f4f4;
+	width: 919px;
+margin: 0 auto;
+padding: 0;
+}
+
+#content1 h2 {
+	padding-top: 12px;
+	font-family: "Bebas";
+	font-size: 50px;
+	color: #2190c1;
+	text-align: center;
+}
+
+#content1 p {
+	line-height: 19px;
+	text-indent: 0;
+	margin: 0 14px;
+	font-family: "Ubuntu";
+	font-size: 13px;
+	font-weight: normal;
+	color: #515862;
+	text-align: center;
+}
+
+#content2 h1 {
+	font-family: "Bebas";
+	font-size: 69.5px;
+	color: #515862;
+	text-align: center;
+}
+/* линия */
+#content2 hr#hr-top {
+	width: 1280px;
+	margin-left: -180.5px;
+	background-color: #dcdcdc;
+	height: 2px;
+	border: none;
+}
+
+/* колонки */
+.column {
+	float: left;
+	width: 25%;
+	border: 1px solid #dcdcdc;
+	border-top: none;
+	border-bottom: none;
+}
+
+#block h4 {
+	font-family: "Bree Serif" , sans-serif;
+	font-size: 20px;
+	color: #2190c1;
+	text-align: center;
+	padding-top: 140px;
+}
+
+#block p {
+	font-family: "Ubuntu" , sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	color: #515862;
+	text-align: center;
+	padding: 20px 12px 25px 12px;
+
+	line-height: 18px;
+}
+
+.f1 {
+	background: url(../photo/photo1.png) no-repeat center 43px;
+	background-color: #f4f4f4;
+	border-right: none;
+}
+
+.f2 {
+	background: url(../photo/photo2.png) no-repeat center 43px;
+	background-color: #f4f4f4;
+	border-right: none;
+}
+
+.f3 {
+	background: url(../photo/photo3.png) no-repeat center 38px;
+	background-color: #f4f4f4;
+	border-right: none;
+}
+
+.f4 {
+	background: url(../photo/photo4.png) no-repeat center 43px;
+	background-color: #f4f4f4;
+
+}
+
+#content2 hr#hr-bottom {
+	width: 1280px;
+	margin-left: -180.5px;
+	background-color: #dcdcdc;
+	height: 4px;
+	border: none;
+}
+
+/* content 3 */
+#content3 h2 {
+	padding-top: 27px;
+	margin-bottom: 8px;
+	font-family: "Bebas";
+	font-size: 50px;
+	color: #2190c1;
+	text-align: center;
+}
+
+#block-wrapper .block {
+	background-color: #ffffff;
+}
+
+.block {
+	float: left;
+	width: 42%;
+	margin: 4%;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: -10px -10px #d3d3d3;
+	   -moz-box-shadow: -10px -10px #d3d3d3;
+		 -o-box-shadow: -10px -10px #d3d3d3;
+		-ms-box-shadow: -10px -10px #d3d3d3;
+}
+.block:nth-last-child(1), .block:nth-last-child(2) {
+	margin-bottom: 105px;
+	margin-top: 18.75px;
+}
+
+.b1 {
+	background: url(../photo/avatar1.jpg) no-repeat 12px 12px;
+}
+.b2 {
+	background: url(../photo/avatar2.jpg) no-repeat 12px 12px;
+}
+.b3 {
+	background: url(../photo/avatar1.jpg) no-repeat 12px 12px;
+}
+.b4 {
+	background: url(../photo/avatar2.jpg) no-repeat 12px 12px;
+}
+
+.block h4 {
+	font-family: "Bree Serif", serif;
+	font-size: 17px;
+	color: #666;
+	margin-left: 200px;
+	margin-top: 24px;
+}
+
+.block h3 {
+	font-family: "Bebas", sans-serif;
+	font-size: 33px;
+	color: #2190c1;
+	margin-left: 175px;
+	margin-top: -8px;
+}
+
+.block a.mail {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #94979b;
+	margin-left: 175px;
+}
+
+.block .a {
+	float: left;
+	margin-left: 184px;
+	margin-top: 15px;
+}
+
+.block p {
+	font-family: "Ubuntu";
+	font-weight: 400;
+	color: #515862;
+	font-size: 12px;
+	margin: 30px 13px;
+}
+
+/* footer */
+#footer-block {
+	width: 1280px;
+	height: 340px;
+	margin: 0 auto;
+	padding: 0 180.5px;
+	background-color: #2e3e4f;
+}
+
+.fb {
+	float: left;
+	margin-top: 31px;
+}
+
+.fb h2 {
+	font-family: "Bebas", sans-serif;
+	font-size: 30px;
+	color: #f98561;
+	margin-bottom: 18px;
+}
+
+#f-block1 {
+	width: 26%;
+}
+#f-block2 {
+	width: 30%;
+}
+
+#f-block2 p {
+	margin-right: 15px;
+}
+
+#f-block3 {
+	width: 29%;
+}
+#f-block4 {
+	width: 15%;
+}
+
+#footer-block p, a {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: #a3afb2;
+}
+
+#footer-block label {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #2387b5;
+}
+
+#footer-block p, a, span {
+	line-height: 20px;
+}
+
+#footer-block a {
+	color: #2190c1;
+	position: relative;
+}
+
+#footer-block a:not(#sing-up):hover {
+	top: 1px;
+	left: 1px;
+	color: #1f78a0;
+}
+
+#footer-block hr {
+	width: 210px;
+	background-color: #556270;
+	border: none;
+	height: 1px;
+	margin: 11px 0;
+}
+
+#footer-block #f-block2 hr {
+	width: 245px;
+}
+
+#footer-block #f-block3 hr {
+	width: 230px;
+}
+
+#your-mail {
+	height: 27px;
+	width: 245px;
+	border: 1px solid #f1f2f3;
+	border-radius: 3px;
+	margin-top: 11px;
+	margin-bottom: 17px;
+}
+
+a#sing-up {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #eaf2f7;
+	background: #2190c1;
+	padding: 6px 16px;
+	border-radius: 3px;
+	margin-left: 168px;
+	position: relative;
+}
+
+a#sing-up:hover {
+	background: #1f7da6;
+	top: 1px;
+}
+
+.r1, .r2, .r3 {
+	background: url(../photo/recent1.jpg) no-repeat left 1px;
+}
+
+#f-block4 a {
+	color: #a3afb2;
+} 
+
+.recent p, .recent a {
+	margin-left: 67px;
+}
+
+.c1 {
+	background: url(../photo/contact1.png) no-repeat left top;
+	margin-bottom: 22px;
+}
+.c2 {
+	background: url(../photo/contact2.png) no-repeat left top;
+	margin-bottom: 22px;
+}
+.c3 {
+	background: url(../photo/contact3.png) no-repeat left 8px;
+	margin-bottom: 22px;
+}
+
+.contact a {
+	margin-left: 41px;
+}
